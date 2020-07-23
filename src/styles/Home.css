@@ -1,0 +1,85 @@
+/* Import Ubuntu font to project */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+/* Start introduction section */
+#introduction {
+    display: flex;
+    flex-direction: row;
+    color: #f5f6fa;
+    background-color: #191919;
+    padding: 1em;
+    text-align: justify;
+}
+
+#introduction img {
+    width: 50%;
+    margin-right: auto;
+    border-radius: 1em;
+}
+
+#introduction div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+
+#introduction #linktomenue {
+    background: #cb2d3e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 2em;
+    padding: .5em;
+    width: max-content;
+    height: max-content;
+    border-radius: 5px;
+}
+/* End introduction section */
+
+
+/* Start working hour section */
+#workingHour {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    margin-bottom: 5em;
+    background-color: #191919;
+}
+#workingHour img {
+    width: 50%;
+    border-radius: 1em;
+}
+#workingHour .open-close-hour {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    color: #f5f6fa;
+    font-size: 20px;
+}
+#workingHour .open-close-hour h3{
+    font-family: 'Ubuntu', sans-serif;
+}
+/* End working hour section */
+
+
+
+@media only screen and (max-width: 1100px) {
+    #introduction {
+        flex-direction: column-reverse;
+    }
+    #introduction img {
+        width: 100%;
+    }
+    #workingHour {
+        flex-direction: column;
+    }
+    #workingHour img {
+        width: 100%;
+    }
+}
