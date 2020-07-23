@@ -1,0 +1,59 @@
+#products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4em 0;
+}
+
+.products-title {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    color: #ecf0f1;
+}
+
+.product-card {
+    width: 25%;
+    height: 20vw;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card .product-card-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: .9;
+}
+
+.product-card-overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    /* here I disappear product card with top: -100% */
+    top: -100%;
+    left: 0;
+    transition: all .4s;
+    color: blanchedalmond;
+    background-color: rgb(38,38,38, .9);
+}
+
+/* when hover on product card product's name and price visible */
+.product-card:hover .product-card-overlay{
+    top: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .product-card {
+        width: 50%;
+        height: 40vw;
+    }
+}
