@@ -1,0 +1,50 @@
+#blog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+    color: #ecf0f1;
+}
+
+.blog-preview {
+    display: flex;
+    padding: 1em 0;
+}
+
+/* For move images and post  */
+.blog-preview:nth-child(2n) {
+    flex-direction: row;
+}
+
+.blog-preview:nth-child(2n+1) {
+    flex-direction: row-reverse;
+}
+
+.blog-preview-img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.blog-preview-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 1em;
+    color: #ecf0f1;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 660px) {
+    .blog-preview:nth-child(2n) {
+        flex-direction: column;
+    }
+
+    .blog-preview:nth-child(2n+1) {
+        flex-direction: column;
+    }
+
+    .blog-preview-img {
+        width: 100%;
+    }
+}
