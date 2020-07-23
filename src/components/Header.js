@@ -28,7 +28,7 @@ const Header = () =>  {
                     {/* Start Desktop Menue */}
                     <ul id="desktop-nav">
                         <li className="logo">
-                            <img src={logo}/>
+                            <img src={logo} alt="logo-coffee-shop"/>
                         </li>
                         <li className="nav-item" onClick={unchecked}>
                             <Link to="/">خانه</Link>
@@ -40,7 +40,7 @@ const Header = () =>  {
                             <Link to="/contact-us">ارتباط با کافه دورهمی</Link>
                         </li>
                         <li className="nav-item" onClick={unchecked}>
-                            <Link to="/gallery">تصاویر کافه دورهمی</Link>
+                            <Link to="/blog">تصاویر کافه دورهمی</Link>
                         </li>
                     </ul>
                     {/* End Desktop Menue */}
