@@ -34,13 +34,13 @@ const Header = () =>  {
                             <Link to="/">خانه</Link>
                         </li >
                         <li className="nav-item" onClick={unchecked}>
-                            <Link to="/menue/all">منوی بستنی دورهمی</Link>
+                            <Link to="/menue/all">منوی کافه دورهمی</Link>
                         </li>
                         <li className="nav-item" onClick={unchecked}>
-                            <Link to="/contact-us">ارتباط با بستنی دورهمی</Link>
+                            <Link to="/contact-us">ارتباط با کافه دورهمی</Link>
                         </li>
                         <li className="nav-item" onClick={unchecked}>
-                            <Link to="/gallery">تصاویر بستنی دورهمی</Link>
+                            <Link to="/gallery">تصاویر کافه دورهمی</Link>
                         </li>
                     </ul>
                     {/* End Desktop Menue */}

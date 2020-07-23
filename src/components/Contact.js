@@ -20,7 +20,7 @@ const Contact = () => {
 
             {/* Start contact-us form  */}
             <div className="contact-us-form">
-                <h3>نظر شما در مورد بستنی دورهمی</h3>
+                <h3>نظر شما در مورد کافه دورهمی</h3>
                 <form>
                     <input type="text" id="form-name" placeholder="نام شما..." />
                     <input type="text" id="form-phone" placeholder="تلفن شما..." /><br />
